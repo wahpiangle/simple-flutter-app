@@ -9,12 +9,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('test app'),
+        title: Text('test apps'),
         centerTitle: true,
         backgroundColor: Colors.teal[600],
       ),
       body: Center(
-        child: Image(image: AssetImage('assets/img.jpg')),
+        child: Image.asset('assets/img.jpg'),
+        // or Image.network('link')
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.teal[600],
