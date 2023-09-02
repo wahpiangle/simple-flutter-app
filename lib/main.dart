@@ -14,16 +14,11 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.teal[600],
       ),
       body: Center(
-          child: Text(
-        "Helosso",
-        style: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.w600,
-          letterSpacing: 2,
-          color: Colors.grey[600],
-          fontFamily: 'OpenSans',
+        child: Image(
+          image: NetworkImage(
+              'https://images.unsplash.com/photo-1692735067981-3b06067932b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'),
         ),
-      )),
+      ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.teal[600],
         onPressed: () {},
