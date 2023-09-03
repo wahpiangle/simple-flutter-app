@@ -13,14 +13,9 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal[600],
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {},
-          icon: Icon(
-            Icons.access_alarm_sharp,
-          ),
-          label: Text("fsdfs"),
-        ),
+      body: Padding(
+        child: Text("dfasfasdf"),
+        padding: EdgeInsets.all(100),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.teal[600],
