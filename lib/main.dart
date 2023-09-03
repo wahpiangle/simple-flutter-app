@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal[600],
       ),
-      body: Row(
+      body: Column(
         children: <Widget>[
           Text("fasdf"),
           Text("OOOO"),
