@@ -4,8 +4,15 @@ void main() => runApp(MaterialApp(
       home: Card(),
     ));
 
-class Card extends StatelessWidget {
+class Card extends StatefulWidget {
   const Card({super.key});
+
+  @override
+  State<Card> createState() => _CardState();
+}
+
+class _CardState extends State<Card> {
+  int level = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +71,7 @@ class Card extends StatelessWidget {
               height: 10,
             ),
             Text(
-              '9',
+              '$level',
               style: TextStyle(
                   color: Colors.amberAccent,
                   letterSpacing: 2.0,
@@ -97,6 +104,16 @@ class Card extends StatelessWidget {
             )
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // setState is required to update state variables
+          setState(() {
+            level += 1;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.grey[800],
       ),
     );
   }
